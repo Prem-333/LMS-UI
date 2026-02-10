@@ -1,5 +1,20 @@
-.card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
-.btn { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; background: #3498db; color: white; }
-.badge { padding: 5px 10px; border-radius: 20px; font-size: 12px; }
-.status-pending { background: #f1c40f; }
-.status-done { background: #2ecc71; }
+.card { background: var(--card, #fff); padding: 20px; border-radius: var(--radius, 8px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 20px; }
+.btn { display:inline-block; padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; background: var(--primary, #3498db); color: #fff; text-decoration: none; font-weight: 600; transition: background .18s ease, transform .08s ease; }
+.btn:hover { background: color-mix(in srgb, var(--primary, #3498db) 80%, black); transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn:focus { outline: 3px solid rgba(52,152,219,0.18); }
+.badge { display:inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; background: #eee; color: var(--text); }
+.status-pending { background: #f1c40f; color: #222; }
+.status-done { background: #2ecc71; color: #fff; }
+
+input[type="text"], input[type="password"], textarea, select {
+	width: 100%; padding: 10px; border: 1px solid #e0e6ea; border-radius: 6px; margin-bottom: 10px; background: #fff;
+}
+
+a { color: var(--primary); }
+
+.muted { color: var(--muted); }
+
+/* Utility helpers */
+.text-center { text-align: center; }
+.mb-0 { margin-bottom: 0; }
