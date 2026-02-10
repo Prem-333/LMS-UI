@@ -5,12 +5,19 @@
     <link rel="stylesheet" href="css/components.css">
     <title>LMS - Login</title>
 </head>
-<body style="display:flex;justify-content: center; align-items: center; min-height:100vh; background: linear-gradient(180deg,#2c3e50, #1a2a3a);">
-    <div class="card" style="width: 320px; text-align: center;">
-        <h2>University LMS</h2>
-        <input type="text" placeholder="Username" style="width:90%; margin-bottom:10px; padding:10px;"><br>
-        <input type="password" placeholder="Password" style="width:90%; margin-bottom:10px; padding:10px;"><br>
-        <button class="btn" onclick="window.location.href='dashboard.html'">Login</button>
+</body>
+<body style="display:flex;justify-content:center;align-items:center;min-height:100vh;background:linear-gradient(180deg,#e9f0f8, #f7fafc);">
+    <div class="card" style="width:360px; text-align:center;">
+        <h2 class="mb-0">University LMS</h2>
+        <p class="muted" style="margin:6px 0 16px 0;">Sign in to continue</p>
+        <form action="dashboard.html" method="get" style="margin-top:8px;">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button class="btn" type="submit">Login</button>
+        </form>
+        <div style="margin-top:12px;">
+            <a href="#" class="btn secondary">Forgot password?</a>
+        </div>
     </div>
 </body>
 </html>
