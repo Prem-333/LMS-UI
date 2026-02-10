@@ -21,7 +21,28 @@ a:hover { text-decoration: underline; }
 
 .muted { color: var(--muted); }
 
-/* small helpers */
 .flex { display:flex; gap:12px; align-items:center; }
 .space-between { display:flex; justify-content:space-between; align-items:center; }
 
+/* Header and avatar */
+.header {
+	display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:18px;
+}
+.header .title { font-size:1.25rem; font-weight:700; }
+.avatar {
+	width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--primary-hover)); display:inline-flex; align-items:center; justify-content:center; color:#fff; font-weight:700;
+}
+
+/* Breadcrumb */
+.breadcrumb { font-size:0.9rem; color:var(--text-muted); margin-bottom:12px; }
+.breadcrumb a { color:var(--text-muted); }
+
+/* Card hover lift */
+.card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(17,24,39,0.12); }
+
+/* Footer */
+.site-footer { margin-top:40px; text-align:center; color:var(--text-muted); font-size:0.9rem; }
+
+/* Spacing helpers */
+.py-12 { padding-top:12px; padding-bottom:12px; }
+.px-12 { padding-left:12px; padding-right:12px; }
