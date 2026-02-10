@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
     <title>Courses - LMS</title>
 </head>
 <body>
     <div class="sidebar">
-        <h3>LMS</h3>
+        <h3>LMS Admin</h3>
         <a href="dashboard.html">Dashboard</a>
-        <a href="courses.html">Courses</a>
+        <a href="courses.html" class="active">Courses</a>
         <a href="assignments.html">Assignments</a>
     </div>
     <div class="main-content">
@@ -28,10 +27,36 @@
             </div>
         </div>
         <div class="container">
-            <div class="card">
-                <h3>Web Development 101</h3>
-                <p class="meta">HTML, CSS, and JS basics.</p>
-                <div class="space-between" style="margin-top:12px;"><a href="course-detail.html" class="btn">View Course</a><span class="badge">Open</span></div>
+            <div class="grid-3">
+                <div class="card">
+                    <div style="height:120px; background:#eef2ff; border-radius:8px; margin-bottom:16px; display:flex; align-items:center; justify-content:center; color:#4f46e5; font-weight:bold;">Web Dev</div>
+                    <h3>Web Development 101</h3>
+                    <p class="muted">Master HTML5, CSS3, and Modern JavaScript from scratch.</p>
+                    <div class="space-between" style="margin-top:20px;">
+                        <a href="course-detail.html" class="btn">View Course</a>
+                        <span class="badge status-done">Open</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div style="height:120px; background:#f0fdf4; border-radius:8px; margin-bottom:16px; display:flex; align-items:center; justify-content:center; color:#16a34a; font-weight:bold;">UI/UX</div>
+                    <h3>UI/UX Design Basics</h3>
+                    <p class="muted">Learn the principles of user interface and experience design.</p>
+                    <div class="space-between" style="margin-top:20px;">
+                        <a href="#" class="btn">View Course</a>
+                        <span class="badge status-done">Open</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div style="height:120px; background:#fff7ed; border-radius:8px; margin-bottom:16px; display:flex; align-items:center; justify-content:center; color:#ea580c; font-weight:bold;">Python</div>
+                    <h3>Python for Data Science</h3>
+                    <p class="muted">Analyze large datasets and create beautiful visualizations.</p>
+                    <div class="space-between" style="margin-top:20px;">
+                        <a href="#" class="btn secondary">Closed</a>
+                        <span class="badge">Waitlist</span>
+                    </div>
+                </div>
             </div>
             <div class="site-footer">© 2026 University LMS — UI prototype</div>
         </div>

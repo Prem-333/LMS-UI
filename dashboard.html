@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
+    <title>Dashboard - LMS</title>
 </head>
 <body>
     <div class="sidebar">
         <h3>LMS Admin</h3>
-        <p><a href="dashboard.html" style="color:white">Dashboard</a></p>
-        <p><a href="courses.html" style="color:white">Courses</a></p>
-        <p><a href="assignments.html" style="color:white">Assignments</a></p>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="assignments.html">Assignments</a>
     </div>
     <div class="main-content">
         <div class="navbar">
             <div class="header">
                 <div>
-                    <div class="title">Welcome back, Student</div>
+                    <div class="title">Welcome back, Premnath</div>
                     <div class="breadcrumb"><a href="dashboard.html">Home</a> / Dashboard</div>
                 </div>
                 <div class="flex">
-                    <button class="btn secondary">Settings</button>
-                    <div class="avatar">PV</div>
+                    <a href="profile.html" class="avatar">PV</a>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h1>Dashboard</h1>
             <div class="grid-3">
                 <div class="card"><h3 class="mb-0">4</h3><p class="muted">Enrolled Courses</p></div>
                 <div class="card"><h3 class="mb-0">12</h3><p class="muted">Assignments</p></div>
                 <div class="card"><h3 class="mb-0">85%</h3><p class="muted">Attendance</p></div>
+            </div>
+            
+            <div class="card">
+                <h3>Recent Activity</h3>
+                <p class="muted">You completed "HTML Portfolio" 2 hours ago.</p>
             </div>
 
             <div class="site-footer">© 2026 University LMS — UI prototype</div>

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/components.css">
-        <title>Assignments - LMS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Assignments - LMS</title>
 </head>
 <body>
     <div class="sidebar">
-        <h3>LMS</h3>
+        <h3>LMS Admin</h3>
         <a href="dashboard.html">Dashboard</a>
         <a href="courses.html">Courses</a>
-        <a href="assignments.html">Assignments</a>
+        <a href="assignments.html" class="active">Assignments</a>
     </div>
     <div class="main-content">
         <div class="navbar">
@@ -22,7 +21,7 @@
                     <div class="breadcrumb"><a href="dashboard.html">Home</a> / Assignments</div>
                 </div>
                 <div class="flex">
-                    <button class="btn">New Assignment</button>
+                    <button class="btn">Submit Assignment</button>
                     <div class="avatar">PV</div>
                 </div>
             </div>
@@ -30,16 +29,52 @@
         <div class="container">
             <div class="card">
                 <div class="space-between">
-                    <div>Project 1: HTML Portfolio<div class="meta">Due: 2026-02-20</div></div>
-                    <span class="badge status-done">Completed</span>
+                    <div class="flex">
+                        <div style="width:48px; height:48px; background:#f1f5f9; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px;">📄</div>
+                        <div>
+                            <div style="font-weight:600; font-size:1.05rem;">Project 1: HTML Portfolio</div>
+                            <div class="muted">Web Development 101 • Due: Feb 20, 2026</div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <span class="badge status-done">Completed</span>
+                        <a href="#" class="btn secondary">View Result</a>
+                    </div>
                 </div>
             </div>
+
             <div class="card">
                 <div class="space-between">
-                    <div>Project 2: CSS Layouts<div class="meta">Due: 2026-03-05</div></div>
-                    <span class="badge status-pending">Pending</span>
+                    <div class="flex">
+                        <div style="width:48px; height:48px; background:#f1f5f9; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px;">🎨</div>
+                        <div>
+                            <div style="font-weight:600; font-size:1.05rem;">Project 2: CSS Layouts</div>
+                            <div class="muted">Web Development 101 • Due: Mar 05, 2026</div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <span class="badge status-pending">Pending</span>
+                        <a href="#" class="btn">Upload File</a>
+                    </div>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="space-between">
+                    <div class="flex">
+                        <div style="width:48px; height:48px; background:#f1f5f9; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px;">⚡</div>
+                        <div>
+                            <div style="font-weight:600; font-size:1.05rem;">Quiz: JavaScript Fundamentals</div>
+                            <div class="muted">Web Development 101 • Due: Mar 12, 2026</div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <span class="badge status-pending">Not Started</span>
+                        <a href="#" class="btn">Start Quiz</a>
+                    </div>
+                </div>
+            </div>
+            
             <div class="site-footer">© 2026 University LMS — UI prototype</div>
         </div>
     </div>

@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
     <title>LMS - Login</title>
 </head>
-</body>
-<body style="display:flex;justify-content:center;align-items:center;min-height:100vh;background:linear-gradient(180deg,#e9f0f8, #f7fafc);">
-    <div class="card" style="width:360px; text-align:center;">
-        <h2 class="mb-0">University LMS</h2>
-        <p class="muted" style="margin:6px 0 16px 0;">Sign in to continue</p>
-        <form action="dashboard.html" method="get" style="margin-top:8px;">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button class="btn" type="submit">Login</button>
+<body style="display:flex; justify-content:center; align-items:center; background:#f1f5f9;">
+    <div class="card" style="width:100%; max-width:400px; padding:40px;">
+        <div style="text-align:center; margin-bottom:32px;">
+            <h2 style="font-weight:800; letter-spacing:-0.05em; margin:0;">University LMS</h2>
+            <p class="muted">Enter your credentials to manage your learning.</p>
+        </div>
+        <form action="dashboard.html" method="get">
+            <label class="muted">Username</label>
+            <input type="text" name="username" placeholder="name@university.edu" required>
+            <label class="muted">Password</label>
+            <input type="password" name="password" placeholder="••••••••" required>
+            <button class="btn" type="submit" style="width:100%; padding:14px; margin-top:8px;">Sign In</button>
         </form>
-        <div style="margin-top:12px;">
-            <a href="#" class="btn secondary">Forgot password?</a>
+        <div style="margin-top:24px; text-align:center;">
+            <a href="#" class="muted" style="text-decoration:none;">Forgot password?</a>
         </div>
     </div>
 </body>
